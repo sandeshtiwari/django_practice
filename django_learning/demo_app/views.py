@@ -4,4 +4,4 @@ from django.http import HttpResponse
 
 def index(request):
     my_dict = {'insert_here': 'This is the value to be inserted in from the template tag'}
-    return render(request, 'index.html', context=my_dict)
+    return render(request, 'demo_app/index.html', context=my_dict)
