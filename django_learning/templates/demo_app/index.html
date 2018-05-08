@@ -1,11 +1,13 @@
 <!DOCTYPE html>
+{% load staticfiles %}
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
     <title>First Application</title>
   </head>
   <body>
-    <h1>This is index.html</h1>
-    {{ insert_here }}
+    <h1>Django static file example</h1>
+    <!--Using template tagging to inject a static file-->
+    <img src="{% static 'images/django.png' %}" alt="static file demo">
   </body>
 </html>
